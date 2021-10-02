@@ -12,6 +12,10 @@ target 'waffle' do
     :hermes_enabled => false
   )
 
+  pod 'react-native-video', :path => '../node_modules/react-native-video'
+
+  pod 'BVLinearGradient', :path => '../node_modules/react-native-linear-gradient'
+
   target 'waffleTests' do
     inherit! :complete
     # Pods for testing

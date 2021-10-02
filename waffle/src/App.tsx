@@ -1,6 +1,6 @@
-import {AppNavigator} from './@application/navigations';
-import {AppProvider} from './@application/context';
-import React from 'react';
+import { AppNavigator } from "./@application/navigations";
+import { AppProvider } from "./@application/context";
+import React from "react";
 
 const App = () => {
   return (

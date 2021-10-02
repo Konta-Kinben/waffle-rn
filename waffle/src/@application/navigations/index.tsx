@@ -1,13 +1,13 @@
-import {DefaultTheme, NavigationContainer} from '@react-navigation/native';
+import { DefaultTheme, NavigationContainer } from "@react-navigation/native";
 
-import {MainNavigator} from './main.navigator';
-import React from 'react';
+import { MainNavigator } from "./main.navigator";
+import React from "react";
 
 const navigatorTheme = {
   ...DefaultTheme,
   colors: {
     ...DefaultTheme.colors,
-    background: 'transparent',
+    background: "transparent",
   },
 };
 
