@@ -1,0 +1,14 @@
+com/waffle/BuildConfig.java
+ com.waffle.BuildConfig
+com/waffle/ReactNativeFlipper.java
+ com.waffle.ReactNativeFlipper
+ com.waffle.ReactNativeFlipper$1
+ com.waffle.ReactNativeFlipper$2
+ com.waffle.ReactNativeFlipper$2$1
+com/waffle/MainActivity.java
+ com.waffle.MainActivity
+com/waffle/MainApplication.java
+ com.waffle.MainApplication
+ com.waffle.MainApplication$1
+com/facebook/react/PackageList.java
+ com.facebook.react.PackageList
