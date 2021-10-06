@@ -13,7 +13,12 @@ import { createStackNavigator } from "@react-navigation/stack"
 const BottomTab = createBottomTabNavigator()
 const Stack = createStackNavigator()
 
-const ROOT_ROUTES: string[] = [Screens.HOME]
+const ROOT_ROUTES: string[] = [
+	Screens.HOME,
+	Screens.PROFILE,
+	Screens.SIGN_IN,
+	Screens.SIGN_UP,
+]
 
 const TabBarVisibilityOptions = ({ route }): BottomTabNavigationOptions => {
 	// const isNestedRoute: boolean = route.state?.index > 0
@@ -24,11 +29,12 @@ const TabBarVisibilityOptions = ({ route }): BottomTabNavigationOptions => {
 
 const HomeTabsNavigator = (): React.ReactElement => (
 	<BottomTab.Navigator
+		screenOptions={TabBarVisibilityOptions}
 		initialRouteName={Screens.HOME}
 		tabBar={(props) => <HomeBottomNavigation {...props} />}>
 		<BottomTab.Screen name={Screens.HOME} component={Profile} />
-		<BottomTab.Screen name={"Screens.HOME + 1"} component={Profile} />
-		<BottomTab.Screen name={"Screens.HOME + 2"} component={Profile} />
+		<BottomTab.Screen name={Screens.PROFILE} component={Profile} />
+		<BottomTab.Screen name={Screens.PROFILE + 1} component={Profile} />
 		<BottomTab.Screen name={Screens.SIGN_IN} component={SignIn2} />
 	</BottomTab.Navigator>
 )
